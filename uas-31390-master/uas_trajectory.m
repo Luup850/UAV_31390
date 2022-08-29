@@ -40,16 +40,16 @@ waypoints{2} = [9 ; 9 ; 1];
 % Fix this...
 %Custom shit
 %working_waypoints = [0, 0, 1; 9, 9, 1];
-corridors = custom_generate_trajectory(working_waypoints, 4, 0.8, 0.8, 1);
+%corridors = custom_generate_trajectory(working_waypoints, 4, 0.8, 0.8, 1);
 
 order = 7;
-%corridors.times = [1 2 2.5 3 4];
-%corridors.x_lower = [-1 -1 8 8 8];
-%corridors.x_upper = [1 10 10 10 10];
-%corridors.y_lower = [-1 -1 1 -1 8];
-%corridors.y_upper = [1 1 1 10 10];
-%corridors.z_lower = [0 0 0 0 0];
-%corridors.z_upper = [2 2 2 2 2];
+corridors.times = [0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5];
+corridors.x_lower = [0.0 0.0 0.0 0.0 8.5 8.5 8.5 8.5 8.8];
+corridors.x_upper = [8.5 8.5 8.5 8.5 8.7 8.8 8.9 9.0 9.2];
+corridors.y_lower = [-0.35 -0.35 -0.35 -0.35 -0.35 -1.0 -1.0 -1.0 -1.0];
+corridors.y_upper = [0.2 0.2 0.2 0.2 0.2 9.0 9.0 9.0 9.0];
+corridors.z_lower = [0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0];
+corridors.z_upper = [2.0 2.0 2.0 2.0 2.0 2.0 2.0 2.0 2.0];
 % ...until here
 make_plots = true;
 
